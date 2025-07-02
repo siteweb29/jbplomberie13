@@ -10,7 +10,48 @@
     gap: 20px;
 }
 
+/*la div carrouselle*/
 .carroussel{
-    display: block;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/*tous image carroussele*/
+.img{
+    border-radius: 40px;
+    user-select: none;
+}
+/*img gauche et droite*/
+.img_carroussel_dg{
+    display: block;
+    opacity: 0.6;
+    z-index: 1;
+    zoom: 85%;
+}
+
+/*img gauche*/
+.img_carroussel_g{
+    order: 0;
+    margin-right: -250px;
+}
+
+/*img central*/
+.img_carroussel_c{
+    display: block;
+    order: 1;
+    opacity: 1;
+    z-index: 4;
+}
+
+/*img droite*/
+.img_carroussel_d {
+    order: 2;
+    margin-left: -250px;
+}
+
+/*img droite*/
+.img_carroussel_invisible{
+    display: none;
+}
+
