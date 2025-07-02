@@ -1,0 +1,16 @@
+.lg{
+    width: 10%;
+}
+.barre_menu{
+    display: flex;
+    width: 100%;
+    background-color: #cccbcb;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.carroussel{
+    display: block;
+    width: 100%;
+}
