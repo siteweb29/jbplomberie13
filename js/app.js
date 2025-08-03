@@ -1,6 +1,19 @@
 
 //carrousselle
 document.addEventListener('DOMContentLoaded', main);
+emailjs.init({
+    publicKey: "OYZ5x3LDit0x8fJLd",
+    limitRate: {
+        // Set the limit rate for the application
+        id: 'app',
+        // Allow 1 request per 10s
+        throttle: 10000,
+    },
+});
+function sendEmail() {
+    emailjs.sendForm('default_service', 'template_sh2p9re', '#leformulaire').then(() => alert('Sent!')).catch((err) => alert(JSON.stringify(err)));
+}
+
 function main(){
     let liste = ["https://i.ibb.co/9Hf0nLRY/IMG-20250702-WA0028.jpg","https://i.ibb.co/3mVnx0FV/IMG-20250702-WA0029.jpg","https://i.ibb.co/GvXtDHFC/IMG-20250702-WA0026.jpg","https://i.ibb.co/W4FypRDn/IMG-20250702-WA0027.jpg","https://i.ibb.co/PzftpK4n/IMG-20250702-WA0024.jpg","https://i.ibb.co/sJ99k2TX/IMG-20250702-WA0025.jpg","https://i.ibb.co/5X0M59rN/IMG-20250702-WA0023.jpg","https://i.ibb.co/sdq9XtGY/IMG-20250702-WA0020.jpg","https://i.ibb.co/9HcMkhYk/IMG-20250702-WA0021.jpg", "https://i.ibb.co/vxnqjXNx/IMG-20250702-WA0022.jpg","https://i.ibb.co/PvtJkrGd/IMG-20250702-WA0019.jpg","https://i.ibb.co/HfjYS1WK/Whats-App-Image-2025-07-02-19-15-00-2b793d74.jpg","https://i.ibb.co/DHzwS74D/Whats-App-Image-2025-07-02-19-05-13-8f8f3297.jpg"];
     let button_gauche = document.getElementById("b_gauche");
@@ -24,4 +37,11 @@ function main(){
         document.getElementById("img3").src = liste[2];
 
     })})
+
+    var envoie = document.getElementById("envoyer");
+    envoie.addEventListener("click", event =>{
+        event.preventDefault();
+        var message = document.getElementById("message").value;
+        sendEmail();
+    })
 }

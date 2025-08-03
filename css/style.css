@@ -1,15 +1,145 @@
 .lg{
-    width: 10%;
+    width: 10em;
 }
 .barre_menu{
-    display: flex;
-    width: 100%;
-    background-color: #cccbcb;
-    flex-direction: row;
-    align-items: center;
+    display: block;
+    margin-left: calc(50% - 10em/2);
     gap: 20px;
 }
 
+.logotel{
+    background-color: #c8cfdd;
+    padding: 15px;
+    border-radius: 50%;
+    width: 25px;
+}
+
+.texttel{
+    font-family: "Cambria Math";
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.telephone{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin: 30px;
+}
+
+.detail {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.detail::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("https://i.ibb.co/nVfqbcJ/Capture-d-cran-2025-07-23-164346.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.detail > ul {
+    color: white;
+    position: relative;
+    z-index: 1;
+    list-style: none;
+    padding-left: 70px;
+    font-size: 20pt;
+}
+
+.detail >ul >li{
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.detail > ul > li::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -60px;
+    width: 2em;
+    height: 2em;
+    background-image: url("https://i.ibb.co/CKV33SDP/logoo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#listesection, #prix{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    row-gap: 40px;
+    margin: 35px;
+}
+.liste{
+    border-radius: 15px;
+    border: solid #dcd4d4 2px;
+    width: 20em;
+    height: 18em;
+    padding: 30px;
+    transition: transform 1s;
+}
+
+.liste:hover{
+    transform: translate(0, -30px);
+}
+
+.liste > h1{
+    font-size: 20pt;
+}
+.liste > p{
+    font-family: Georgia;
+}
+
+.prixliste{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prixliste > div > p{
+    padding: 0 !important;
+    margin: 5px;
+}
+.cdn{
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40px;
+}
+
+#zoneintervention > div > h1{
+    font-family: Georgia;
+    text-align: center;
+    font-size: 26pt;
+}
+
+#map{
+    width: 70%;
+    margin-left: calc(50% - 70%/2);
+    height: 660px;
+}
+
+
+#carroussel{
+    display: flex; justify-content: center; width: calc(100% - 230px); margin-right: 40px; margin-left: 120px; margin-top: 50px;
+}
 /*la div carrouselle*/
 .carroussel{
     display: flex;
@@ -61,3 +191,56 @@
     display: none;
 }
 
+/*style_boutton_carrouselle*/
+#b_gauche, #b_droite {
+    border-radius: 5px;
+    border: none;
+    background-color: #4683da;
+    padding: 10px;
+    color: white;
+    zoom: 100%;
+    transition: background-color 1s;
+}
+
+#b_gauche:hover, #b_droite:hover{
+    background-color: #3a69a8;
+    zoom: 120%;
+}
+
+/* formulaire*/
+#form{
+    width: calc(100% - 10%);
+    margin: 5%;
+    border: solid 1px #888888;
+    border-radius: 15px;
+    height: 100%;
+    padding: 15px;
+}
+
+.liste_form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    border-radius: 5px;
+    border: solid 1px #b8b8b8;
+    background-color: #c8cfdd;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+@media (max-width: 1250px) {
+    #map{
+        height: 300px;
+    }
+
+    #carroussel{
+        display: none;
+    }
+}

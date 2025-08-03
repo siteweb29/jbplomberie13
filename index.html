@@ -10,37 +10,164 @@
 
   <link rel="icon" href="img/imagelogo.jpg" type="image/jpg">
   <meta name="theme-color" content="#ffffff">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="js/app.js"></script>
 </head>
 
 <body>
-  <section id="head" style="margin-bottom: 60px">
+  <section id="head">
     <div class="barre_menu">
-      <img src="img/imagelogo.jpg" class="lg">
-      <h1>Jbplomberie</h1>
+      <img src="https://i.ibb.co/ZzVsYqrS/imagelogo.jpg" class="lg">
+    </div>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: center">
+      <div class="telephone">
+        <img src="https://cdn.prod.website-files.com/67b635da1a9ab8a6fdbeee04/67ddf861b9bcdeb600037ba0_phone-call%20icon%20header.webp" class="logotel">
+        <a class="texttel" href="tel:0750519952">07 50 51 99 52</a>
+      </div>
+      <div class="telephone">
+        <img src="https://i.ibb.co/ymzpgTQz/logomail.png" class="logotel" style="width: 60px; padding: 1px">
+        <a class="texttel" href="mailto:jbplomberie_13@hotmail.com">jbplomberie_13@hotmail.com</a>
+      </div>
     </div>
   </section>
-  <section id="description" style="margin: 30px; text-align: center">
-    <p>PLOMBIER CHAUFFAGISTE</p>
-    <p>PROPOSE DIVERS SERVICES DE PLOMBERIE</p>
-    <p>PLOMBERIE</p>
-    <p>DÉBOUCHAGE</p>
-    <p>RADIATEUR</p>
-    <p>PETITE ÉLECTRICITÉ</p>
-    <p>A DES PRIX TRÈS RAISONNABLE</p>
-    <p>VEUILLEZ ME CONTACTER POUR PLUS DE RENSEIGNEMENTS</p>
-    <p></p><a href="tel:0750519952" style="margin-right: 180px">07-50-51-99-52</a>
-    <a href="mailto:jbplomberie_13@hotmail.com">jbplomberie_13@hotmail.com</a></p>
+  <section id="description">
+    <div class="detail">
+      <ul>
+        <li>PLOMBIER CHAUFFAGISTE</li>
+        <li>PROPOSE DIVERS SERVICES DE PLOMBERIE</li>
+        <li>PLOMBERIE</li>
+        <li>DÉBOUCHAGE</li>
+        <li>RADIATEUR</li>
+        <li>PETITE ÉLECTRICITÉ</li>
+        <li>A DES PRIX TRÈS RAISONNABLE</li>
+        <li>VEUILLEZ ME CONTACTER POUR PLUS DE RENSEIGNEMENTS</li>
+      </ul>
+    </div>
   </section>
-  <section id="carroussel" style="display: flex; justify-content: center; width: calc(100% - 230px); margin-right: 40px; margin-left: 120px; margin-top: 50px">
+  <section id="listesection">
+    <div class="liste">
+      <img src="https://cdn.prod.website-files.com/67b635da1a9ab8a6fdbeee04/67b635db1a9ab8a6fdbef06a_icon-01.svg" class="cdn">
+      <h1>Fuite d'eau</h1>
+      <p>Detection de fuite de gaz...</p>
+    </div>
+    <div class="liste">
+      <img src="https://cdn.prod.website-files.com/67b635da1a9ab8a6fdbeee04/67b635db1a9ab8a6fdbef068_icon-03.svg" class="cdn">
+      <h1>Réparation</h1>
+      <p>Intervention vos canalisations et équipements : changement de joint, pression, écoulement...</p>
+    </div>
+    <div class="liste">
+      <img src="https://cdn.prod.website-files.com/67b635da1a9ab8a6fdbeee04/67b635db1a9ab8a6fdbef06d_icon-06.svg" class="cdn">
+      <h1>Débouchage</h1>
+      <p>Entretien et assainissement : curage des canalisations, vidange de fosse septique, toilettes, WC, évier, sanibroyeur, colonne générale.</p>
+    </div>
+    <div class="liste">
+      <img src="https://cdn.prod.website-files.com/67b635da1a9ab8a6fdbeee04/67b635db1a9ab8a6fdbef069_icon-02.svg" class="cdn">
+      <h1>Installation</h1>
+      <p>Maintenance, installation et remplacement : ballon d’eau chaude, chauffe-eau, chaudière.</p>
+    </div>
+  </section>
+  <section id="zoneintervention">
+    <div>
+      <h1>Zone d'intervention</h1>
+      <center><p>Nous pouvons intervenir dans tout <span style="font-weight: bold; color: #4683da">Marseille</span></p></center>
+      <iframe src="https://www.google.com/maps/embed?origin=mfe&pb=!1m2!2m1!1sMARSEILLE,france" id="map"></iframe>
+    </div>
+  </section>
+<hr style="margin: 30px">
+
+
+  </section>
+  <section id="carroussel">
     <div class="carroussel">
-      <button id="b_gauche" style="order: -1">gauche</button>
+      <button id="b_gauche" style="order: -1"> < </button>
       <img id="img1" class="img img_carroussel_dg img_carroussel_g" src="">
       <img id="img2" class="img img_carroussel_c" src="">
       <img id="img3" class="img img_carroussel_dg img_carroussel_d" src="">
-      <button id="b_droite" style="order: 4">droite</button>
+      <button id="b_droite" style="order: 4"> > </button>
     </div>
   </section>
-</body>
+  <section id="prix">
+    <div class="liste prixliste">
+      <img src="https://cdn.prod.website-files.com/67b635da1a9ab8a6fdbeee04/67b671bf15748d3f2e4c1e9d_DE%CC%81TARTRAGE%20ICON.svg" class="cdn">
+      <div>
+        <h1 style="padding-bottom: 15px">DÉTARTRAGE</h1>
+        <p>Détartrage de broyeurs & sanibroyeurs</p>
+        <p>Détartrage de cumulus / ballon d’eau chaude</p>
+      </div>
+      <h2 style="align-self: flex-end">A partir de 129 €</h2>
+    </div>
+    <div class="liste prixliste">
+      <img src="https://cdn.prod.website-files.com/67b635da1a9ab8a6fdbeee04/67b671d84923d7983fb7c113_PLOMBERIE%20CANALISATION%20ICON.svg" class="cdn">
+      <div>
+        <h1>DÉPANNAGE</h1>
+        <p>Dépannage de ballon d’eau chaude</p>
+        <p>Dépannage de chasse d’eau</p>
+        <p>Dépannage de sanitaires</p>
+        <p>Dépannage de W.C. broyeur</p>
+        <p>Dépannage de fuite d’eau</p>
+      </div>
+      <h2 style="align-self: flex-end">A partir de 90 €</h2>
+    </div>
+    <div class="liste prixliste">
+      <img src="https://cdn.prod.website-files.com/67b635da1a9ab8a6fdbeee04/67b635db1a9ab8a6fdbef06e_icon-07.svg" class="cdn">
+      <div>
+        <h1 style="padding-bottom: 15px">DÉBOUCHAGE</h1>
+        <p>Débouchage de canalisation</p>
+        <p>Débouchage de W.C. / Toilettes / Sanitaires et Sanibroyeurs</p>
+      </div>
+      <h2 style="align-self: flex-end">A partir de 89 €</h2>
+    </div>
+    <div class="liste prixliste">
+      <img src="https://cdn.prod.website-files.com/67b635da1a9ab8a6fdbeee04/67b671bf15748d3f2e4c1e9d_DE%CC%81TARTRAGE%20ICON.svg" class="cdn">
+      <div>
+        <h1 style="padding-bottom: 15px">DIAGNOSTIC</h1>
+        <p>Inspection de canalisations et tuyauterie</p>
+        <p>Recherche de fuites encastrées</p>
+        <p>Recherche de fuites intérieur / extérieur</p>
+        <p>Détection de fuites de tous types et tous équipements sanitaires</p>
+      </div>
+      <h2 style="align-self: flex-end">A partir de 79 €</h2>
+    </div>
+    <div class="liste prixliste">
+      <img src="https://cdn.prod.website-files.com/67b635da1a9ab8a6fdbeee04/67b67201105ca06d64475fdd_re%CC%81paration%20plomberie%20icon.svg" class="cdn">
+      <div>
+        <h1 style="padding-bottom: 15px">RÉPARATION</h1>
+        <p>Réparation de fuite de W.C.</p>
+        <p>Réparation de fuite sur robinet</p>
+        <p>Réparation de ballon d’eau chaude / Cumulus</p>
+        <p>Réparation de sanibroyeur</p>
+      </div>
+      <h2 style="align-self: flex-end">A partir de 90 €</h2>
+    </div>
+    <div class="liste prixliste">
+      <img src="https://cdn.prod.website-files.com/67b635da1a9ab8a6fdbeee04/67b671e7732ae17d634f5171_PLOMBIER%20intervention%20icon.svg" class="cdn">
+      <div>
+        <h1 style="padding-bottom: 15px">INSTALLATION</h1>
+        <p>Changement de chauffe-eau</p>
+        <p>Installation d’équipements sanitaires / de W.C. et robinets</p>
+        <p>Installation d’arrivée d’eau</p>
+        <p>Raccordement à l’égout</p>
+      </div>
+      <h2 style="align-self: flex-end">A partir de 149 €</h2>
+    </div>
 
+  </section>
+
+  <section id="form">
+  <form id="leformulaire" class="liste_form">
+    <label for="prenom"></label>
+    <input class="input" id="prenom" name="prenom" type="text" placeholder="Prenom">
+    <label for="nom"></label>
+    <input class="input" id="nom" name="nom" type="text" placeholder="Nom">
+    <label for="adressemail"></label>
+    <input class="input" id="adressemail" name="adressemail" type="text" placeholder="Adresse Mail">
+    <label for="message"></label>
+    <textarea class="input" id="message" name="message" placeholder="Message"></textarea>
+    <input type="submit" id="envoyer">
+  </form>
+</section>
+
+
+</body>
 </html>
