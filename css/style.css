@@ -244,3 +244,18 @@
         display: none;
     }
 }
+@media (max-width: 500px) {
+    .input{
+        width: 70%;
+        padding: 18px;
+    }
+    #form{
+        width: calc(100% - 20%);
+    }
+    .compact{
+        font-size: 14px;
+    }
+    .texttel{
+        font-size: 14pt;
+    }
+}
